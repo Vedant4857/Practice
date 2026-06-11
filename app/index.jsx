@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Image } from "react-native";
 import photo from "../assets/img/logo_icon.png";
+import { Link } from "expo-router";
 
 const Home = () => {
   return (
@@ -11,6 +12,12 @@ const Home = () => {
       <View style={styles.card}>
         <Text>Login</Text>
       </View>
+      <Link href="/about" style={styles.link}>
+        About Page
+      </Link>
+      <Link href="/contact" style={styles.link}>
+        Contact Page
+      </Link>
     </View>
   );
 };
@@ -38,5 +45,10 @@ const styles = StyleSheet.create({
     padding: 20,
     borderRadius: 5,
     boxShadow: "4px 4px rgba(0,0,0,0.1)",
+  },
+  link: {
+    marginVertical: 10,
+    borderBottomWidth: 1,
+    color: "blue",
   },
 });
