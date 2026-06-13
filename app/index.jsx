@@ -10,7 +10,9 @@ const Home = () => {
       <Text style={{ marginTop: 10, marginBottom: 30 }}>School ERP</Text>
 
       <View style={styles.card}>
-        <Text>Login</Text>
+        <Link href="/logged">
+          Login
+        </Link>
       </View>
       <Link href="/about" style={styles.link}>
         About Page
